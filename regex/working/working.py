@@ -6,7 +6,7 @@ def main():
     try:
         print(convert(input("Hours: ")))
     except ValueError as e:
-        sys.exit('ValueError')
+        sys.exit("ValueError")
 
 
 def convert(s):
@@ -34,10 +34,9 @@ def change_format(time):
         minute = int(minute)
         if hour != 12:
             hour += 12
-    hour = '0' + str(hour) if hour in range(0,10) else str(hour)
-    minute = '0' + str(minute) if minute in range(0,10) else str(minute)
-    return hour + ':' + minute
-
+    hour = "0" + str(hour) if hour in range(0, 10) else str(hour)
+    minute = "0" + str(minute) if minute in range(0, 10) else str(minute)
+    return hour + ":" + minute
 
 
 if __name__ == "__main__":
