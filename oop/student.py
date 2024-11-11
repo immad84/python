@@ -12,22 +12,15 @@ class Student:
     def get(cls, name, house):
         return cls(name, house)
 
-    def __str__(self): 
+    def __str__(self):
         return f"{self.name} from {self.house}"
 
 
 def main():
-    name = input('Name: ')
-    house = input('House: ')
+    name = input("Name: ")
+    house = input("House: ")
     student = Student.get(name, house)
     print(student)
-    # print(f"{student.name} is in {student.house}")
-
-
-# def get_student():
-#     name = input("What's your name ? ")
-#     house = input("What's your house ? ")
-#     return Student(name, house)
 
 
 if __name__ == "__main__":

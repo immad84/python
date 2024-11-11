@@ -51,7 +51,7 @@ def main():
     house = input("House: ")
     student = Student.get(name, house)
     print(student)
-    student.set_patronus("Stag")
+    student.set_patronus("Otter")
     # student.house = 'Number Four, Priver Drive'
     print(student.charm())
 
